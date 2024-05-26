@@ -17,9 +17,7 @@
 
 <body>
     @include('error.error')
-    @include('partial.header')
     @yield('content')
-    @include('partial.footer')
 </body>
 
 </html>
