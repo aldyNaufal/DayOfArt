@@ -30,9 +30,12 @@
                         <p class="text-xl">22354113</p>
                     </div>
                 </div>
-                <div class="w-1/2 flex flex-col items-end justify-end border-l pl-44 mr-3xl">
-                    <div class="w-full flex justify-end mb-4 mr-3xl">
-                        <img src="{{ asset('assets/images/qrcode.png') }}" alt="QR Code" class="w-20 h-20 transition-transform transform hover:scale-110">
+                <div class="w-1/2 flex flex-col items-end justify-end border-l pl-4">
+                    <div class="w-full flex justify-end mb-4">
+                        <img src="{{ asset('assets/images/qrcode.png') }}" alt="QR Code" class="w-90 h-90 transition-transform transform hover:scale-200">
+                    </div>
+                    <div class="text-right">
+                        <p class="text-lg font-bold">ART123M</p>
                     </div>
                 </div>
             </div>
