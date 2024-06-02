@@ -19,21 +19,21 @@
         <div class="bg-white p-6 rounded-lg shadow-md">
             <h2 class="text-2xl font-bold mb-6">Order</h2>
             <div class="flex items-center mb-4">
-                <img src="{{ asset('images/product.jpg') }}" alt="Product Image" class="w-16 h-16 rounded mr-4">
+                <img src="{{ asset('assets/images/Tiramisu ck poster.png') }}" alt="Product Image" class="w-16 h-16 rounded mr-4">
                 <div>
-                    <h3 class="text-lg font-semibold">Orkestra a la jawa</h3>
+                    <h3 class="text-lg font-semibold">Tiramisu Cooking Class</h3>
                     <p class="text-gray-600">Section 1</p>
-                    <p class="text-gray-600">17 August 2024</p>
+                    <p class="text-gray-600">05 May 2024</p>
                 </div>
             </div>
             <div class="flex justify-between items-center mb-6">
                 <span class="font-semibold">Subtotal :</span>
-                <span class="text-pink-500 font-bold">Rp40.000</span>
+                <span class="text-pink-500 font-bold">Rp90.000</span>
             </div>
             <div class="border-t pt-4">
                 <div class="flex justify-between items-center mb-2">
                     <span>Subtotal</span>
-                    <span>Rp40.000</span>
+                    <span>Rp90.000</span>
                 </div>
                 <div class="flex justify-between items-center mb-2">
                     <span>Tax</span>
