@@ -14,6 +14,10 @@ Route::get('/faq', function () {
     return view('faq');
 });
 
+Route::get('/myticket', function () {
+    return view('myticket');
+});
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
