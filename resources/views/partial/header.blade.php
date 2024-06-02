@@ -4,8 +4,6 @@
         <img src="{{ asset('assets/icons/logo DoA transparent 2.png') }}" alt="Logo doa" class="sm:w-12 sm:ml-4 md:w-15 lg:w-18 xl:w-20 2xl:w-22 ">
         <a href="#" class="hover:text-[#872964] font-bold 2xl:text-xl sm:text-xs md:text-sm lg:text-md xl:text-lg">Home</a>
         <a href="#" class="hover:text-[#872964] font-bold 2xl:text-xl sm:text-xs md:text-sm lg:text-md xl:text-lg">About</a>
-        <a href="#" class="hover:text-[#872964] font-bold 2xl:text-xl sm:text-xs md:text-sm lg:text-md xl:text-lg">Home</a>
-        <a href="#" class="hover:text-[#872964] font-bold 2xl:text-xl sm:text-xs md:text-sm lg:text-md xl:text-lg">About</a>
         <div class="relative group">
             <p class="hover:text-[#872964] font-bold 2xl:text-xl sm:text-xs md:text-sm lg:text-md xl:text-lg cursor-pointer">Activities</p>
             <ul class="absolute hidden group-hover:block bg-[#E145A6] text-[#fcecf6] shadow-md rounded-md z-10">
@@ -16,8 +14,6 @@
                 <li class="px-4 py-2 hover:bg-[#fbe3f2] hover:text-[#972964]"><a href="#">Chunky Bag</a></li>
             </ul>
         </div>
-        <a href="#" class="hover:text-[#872964] 2xl:text-xl sm:text-xs md:text-sm lg:text-md xl:text-lg">FaQ</a>
-        <a href="#" class="hover:text-[#872964] 2xl:text-xl sm:text-xs md:text-sm lg:text-md xl:text-lg">Profile</a>
         <a href="#" class="hover:text-[#872964] font-bold 2xl:text-xl sm:text-xs md:text-sm lg:text-md xl:text-lg">FaQ</a>
         <a href="#" class="hover:text-[#872964] font-bold 2xl:text-xl sm:text-xs md:text-sm lg:text-md xl:text-lg">Profile</a>
     </div>
