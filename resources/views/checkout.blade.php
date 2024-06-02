@@ -1,17 +1,18 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="mx-auto my-10">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-        <div class="md:col-span-2 bg-white p-6 rounded-lg shadow-md w-3/4">
+<div class="flex justify-center my-10 mx-[150px]">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-6xl shadow-lg">
+        <div class="md:col-span-2 bg-white p-6 rounded-lg shadow-md">
             <h2 class="text-2xl font-bold mb-6">Checkout</h2>
             <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
             <form>
                 @csrf
+                @method('POST')
                 <div class="flex flex-col gap-4">
-                    <input type="text" id="name" placeholder="Name" class="mt-1 w-full md:w-1/2 shadow-md p-2 border rounded">
-                    <input type="text" id="phone-number" placeholder="Phone Number" class="mt-1 w-full md:w-1/2 shadow-md p-2 border rounded">
-                    <input type="text" id="email" placeholder="Email" class="mt-1 w-full md:w-1/2 shadow-md p-2 border rounded">
+                    <input type="text" id="name" placeholder="First Name" class="mt-1 w-full shadow-md p-2 border rounded">
+                    <input type="text" id="phone-number" placeholder="Phone number" class="mt-1 w-full shadow-md p-2 border rounded">
+                    <input type="text" id="email" placeholder="Email" class="mt-1 w-full shadow-md p-2 border rounded">
                 </div>
             </form>
         </div>
@@ -48,7 +49,3 @@
     </div>
 </div>
 @endsection
-
-
-
-
