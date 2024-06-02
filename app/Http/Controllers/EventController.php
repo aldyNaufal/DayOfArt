@@ -42,7 +42,7 @@ class EventController extends Controller
         $newId = ($lastEvent."_image.".$image->getClientOriginalExtension());
         ($image->move($destinationPath,$newId));
         
-        $data['image'] = $newId;
+        $data['image'] = '/public/storage/'.$newId;
 
         $newEvent = Event::create($data);
         return redirect(route('admin.event.index'));
