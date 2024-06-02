@@ -22,11 +22,23 @@
             </div>
         </div>
 
-        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <div class="bg-gray-200 h-48 rounded-lg text-black flex items-center justify-center">
-                <p>Workshop</p>
+        <div class="justify-start items-center">
+        <div class="px-10 py-20 relative overflow-hidden  sm:px-5 xl:mt-5">
+            <div class="grid grid-cols-4 gap-10 sm:mt-10 m:flex sm:flex-col sm:gap-5 lg:flex-row ml-20">
+                @foreach($events as $e)
+                <a href="{{ route('detail')}}">
+                    <div class="px-5 py-2 pb-10 shadow-lg rounded-md bg-white h-96 cursor-pointer transform transition-transform duration-300 hover:scale-105">
+                        <img src="{{ asset( $e->image ) }}" alt="{{ $e->name }}" class="rounded-md">
+                        <div class="flex flex-row justify-between mt-5 items-center">
+                            <h1 class="text-xl font-bold">{{$e->name}}</h1>
+                            <p class="text-sm text-gray-400">{{ $e->date }}</p>
+                        </div>
+                        <p class="text-sm text-gray-400 mt-2 mb-3">{{ $e->city }}</p>
+                    </div>
+                </a>
+                @endforeach     
             </div>
-        </section>
+        </div>
     </main>
 </body>
 
