@@ -14,20 +14,21 @@
             <h1 class="text-5xl font-bold mb-10 mt-5">Sign Up</h1>
             <form action="{{ route('signup-post') }}" method="POST">
                 @csrf
-                <div class="flex flex-col gap-2">
-                    <input type="text" placeholder="Fullname" name="name" class="w-96 px-4 py-2 border rounded-md mb-4 shadow-md outline-none">
-                    <input type="text" placeholder="Surename" name="surename" class="w-96 px-4 py-2 border rounded-md mb-4 shadow-md outline-none">
-                    <input type="email" placeholder="Email" name="email" class="w-96 px-4 py-2 border rounded-md mb-4 shadow-md outline-none">
-                    <input type="password" placeholder="Password" name="password" class="w-96 px-4 py-2 border rounded-md mb-4 shadow-md outline-none">
-                    <input type="password" placeholder="Re-enter password" name="re_password" class="w-96 px-4 py-2 border rounded-md mb-4 shadow-md outline-none">
-                    <input type="date" placeholder="Birthdate" name="Birthdate" class="w-96 px-4 py-2 border rounded-md mb-4 shadow-md outline-none">
-                    <input type="tel" placeholder="Phone Number" name="phone_number" class="w-96 px-4 py-2 border rounded-md mb-4 shadow-md outline-none">
+                @method('post')
+                <div class="flex flex-col gap-4">
+                    <input type="text" placeholder="Full Name" name="fullname" class="w-96 px-4 py-2 border rounded-md shadow-md outline-none" required>
+                    <input type="text" placeholder="Surname" name="surname" class="w-96 px-4 py-2 border rounded-md shadow-md outline-none" required>
+                    <input type="email" placeholder="Email" name="email" class="w-96 px-4 py-2 border rounded-md shadow-md outline-none" required>
+                    <input type="password" placeholder="Password" name="password" class="w-96 px-4 py-2 border rounded-md shadow-md outline-none" required>
+                    <input type="password" placeholder="Re-enter Password" name="password_confirmation" class="w-96 px-4 py-2 border rounded-md shadow-md outline-none" required>
+                    <input type="date" placeholder="Birthdate" name="birthdate" class="w-96 px-4 py-2 border rounded-md shadow-md outline-none" required>
+                    <input type="tel" placeholder="Phone Number" name="phone_number" class="w-96 px-4 py-2 border rounded-md shadow-md outline-none" required>
                     <div class="flex flex-row justify-between mb-5 mt-2">
-                        <button class="px-12 py-2 flex flex-row gap-5 rounded-md align-middle shadow-md hover:bg-gray-50">
+                        <button type="button" class="px-12 py-2 flex flex-row gap-5 rounded-md align-middle shadow-md hover:bg-gray-50">
                             <img src="{{ asset('assets/icons/google.png') }}" alt="Google" class="w-5 h-5">
                             <p class="text-sm">Google</p>
                         </button>
-                        <button class="px-12 py-2 flex flex-row gap-5 rounded-md shadow-md hover:bg-gray-50">
+                        <button type="button" class="px-12 py-2 flex flex-row gap-5 rounded-md shadow-md hover:bg-gray-50">
                             <img src="{{ asset('assets/icons/facebook.png') }}" alt="Facebook" class="w-5 h-5">
                             <p class="text-sm">Facebook</p>
                         </button>

@@ -3,8 +3,9 @@
 <div class="container mx-auto w-11/12 mt-5">
     <h2 class="text-center text-blue-500">Add Event</h2>
     <hr class="my-4">
-    <form action="{{ route('admin-event-store') }}" method="post" enctype="multipart/form-data">
+    <form action="{{ route('admin.event.update',  ['event'=> $event]) }}" method="post" enctype="multipart/form-data">
         @csrf
+        @method('put')
         <div class="form-group mb-4">
             <label for="name" class="block">Name Event</label>
             <input type="text" id="name" class="form-control border border-gray-300 p-2 w-full" placeholder="Add Event" name="name" required>
@@ -23,13 +24,8 @@
             <input type="text" id="city" class="form-control border border-gray-300 p-2 w-full" placeholder="Add City" name="city" required>
         </div>
         <div class="form-group mb-4">
-            <label for="image" class="block">Images</label>
-            <input type="file" id="image" name="image" class="w-full" required multiple>
-            <p class="text-red-500 text-sm mt-1">Allowed extensions: .png, .jpg, .jpeg</p>
-        </div>
-        <div class="form-group mb-4">
             <label for="startReg" class="block">Start Registration</label>
-            <input type="date" id="startReg" class="form-control border border-gray-300 p-2 w-full" name="start_date" required>
+            <input type="date" id="startReg" class="form-control border border-gray-300 p-2 w-full" name="startReg" required>
         </div>
         <div class="form-group mb-4">
             <label for="date" class="block">Date</label>
@@ -41,17 +37,8 @@
         </div>
         <div class="form-group mb-4">
             <label for="linkLocation" class="block">Location Map</label>
-            <input type="text" id="linkLocation" class="form-control border border-gray-300 p-2 w-full" name="location_map" required>
+            <input type="text" id="linkLocation" class="form-control border border-gray-300 p-2 w-full" name="linkLocation" required>
         </div>
-        <div class="form-group mb-4">
-            <label for="created_at" class="block">Location Map</label>
-            <input type="text" id="created_at" class="form-control border border-gray-300 p-2 w-full" name="location_map" required>
-        </div>
-        <div class="form-group mb-4">
-            <label for="updated_at" class="block">Location Map</label>
-            <input type="text" id="updated_at" class="form-control border border-gray-300 p-2 w-full" name="location_map" required>
-        </div>
-        
         <input type="submit" name="submit" value="Save" class="bg-blue-500 text-white p-2 rounded cursor-pointer mb-4">
     </form>
 </div>

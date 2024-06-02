@@ -6,45 +6,35 @@
     <table class="w-full border-collapse mt-5">
         <tr class="border border-gray-300">
             <th class="p-3 border border-gray-300 bg-gray-200 text-center">Name</th>
-            <td class="p-3 border border-gray-300 text-center">{{ $events->name }}</td>
+            <td class="p-3 border border-gray-300 text-center">{{ $event->name }}</td>
         </tr>
         <tr class="border border-gray-300">
             <th class="p-3 border border-gray-300 bg-gray-200 text-center">Category</th>
-            <td class="p-3 border border-gray-300 text-center">{{ $events->category }}</td>
-        </tr>
-        <tr class="border border-gray-300">
-            <th class="p-3 border border-gray-300 bg-gray-200 text-center">Province</th>
-            <td class="p-3 border border-gray-300 text-center">{{ $events->province }}</td>
+            <td class="p-3 border border-gray-300 text-center">{{ $event->category }}</td>
         </tr>
         <tr class="border border-gray-300">
             <th class="p-3 border border-gray-300 bg-gray-200 text-center">City</th>
-            <td class="p-3 border border-gray-300 text-center">{{ $events->city }}</td>
-        </tr>
-        <tr class="border border-gray-300">
-            <th class="p-3 border border-gray-300 bg-gray-200 text-center">Description</th>
-            <td class="p-3 border border-gray-300 text-center">{{ $events->description }}</td>
+            <td class="p-3 border border-gray-300 text-center">{{ $event->city }}</td>
         </tr>
         <tr class="border border-gray-300">
             <th class="p-3 border border-gray-300 bg-gray-200 text-center">Start Date</th>
-            <td class="p-3 border border-gray-300 text-center">{{ $events->startReg }}</td>
+            <td class="p-3 border border-gray-300 text-center">{{ $event->startReg }}</td>
         </tr>
         <tr class="border border-gray-300">
             <th class="p-3 border border-gray-300 bg-gray-200 text-center">Date</th>
-            <td class="p-3 border border-gray-300 text-center">{{ $events->date }}</td>
+            <td class="p-3 border border-gray-300 text-center">{{ $event->date }}</td>
         </tr>
         <tr class="border border-gray-300">
             <th class="p-3 border border-gray-300 bg-gray-200 text-center">Time</th>
-            <td class="p-3 border border-gray-300 text-center">{{ $events->time }}</td>
+            <td class="p-3 border border-gray-300 text-center">{{ $event->time }}</td>
         </tr>
         <tr class="border border-gray-300">
             <th class="p-3 border border-gray-300 bg-gray-200 text-center">Images</th>
             <td class="p-3 border border-gray-300 text-center">
-                @foreach($events->image as $image)
-                <img src="{{ asset( $image) }}" alt="" class="w-32 h-32 object-cover">
-                @endforeach
+                <img src="{{ asset($event->image) }}" alt="" class="w-32 h-32 object-cover">
             </td>
         </tr>
     </table>
-    <a href="{{ route('admin-event') }}" class="block w-48 mt-4 p-2 bg-blue-500 text-white text-center rounded">Back to Event List</a>
+    <a href="{{ route('admin.event.index') }}" class="block w-48 mt-4 p-2 bg-blue-500 text-white text-center rounded">Back to Event List</a>
 </div>
 @endsection

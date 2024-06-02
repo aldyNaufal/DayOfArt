@@ -7,7 +7,7 @@
         <div class="relative group">
             <p class="hover:text-[#872964] font-bold 2xl:text-xl sm:text-xs md:text-sm lg:text-md xl:text-lg cursor-pointer">Activities</p>
             <ul class="absolute hidden group-hover:block bg-[#E145A6] text-[#fcecf6] shadow-md rounded-md z-10">
-                <li class="px-4 py-2 hover:bg-[#fbe3f2] hover:text-[#972964]"><a href="#">All Activities</a></li>
+                <li class="px-4 py-2 hover:bg-[#fbe3f2] hover:text-[#972964]"><a href="/">All Activities</a></li>
                 <li class="px-4 py-2 hover:bg-[#fbe3f2] hover:text-[#972964]"><a href="#">Pottery</a></li>
                 <li class="px-4 py-2 hover:bg-[#fbe3f2] hover:text-[#972964]"><a href="#">Cooking Class</a></li>
                 <li class="px-4 py-2 hover:bg-[#fbe3f2] hover:text-[#972964]"><a href="#">Flower Bucket</a></li>

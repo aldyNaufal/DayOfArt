@@ -12,7 +12,7 @@
     <div class="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-8">
     <div class="" >
             <h1 class="text-5xl font-bold mb-10 2xl:text-5xl 2xl:font-bold 2xl:mb-10">Login</h1>
-            <form action="" method="POST">
+            <form action="{{route('signin')}}" method="POST">
                 @csrf
                 @method('POST')
                 <div class="flex flex-col gap-2">
