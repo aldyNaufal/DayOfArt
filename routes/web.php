@@ -18,6 +18,13 @@ Route::get('/myticket', function () {
     return view('myticket');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
+// Route::get('/schedule', function () {
+//     return view('schedule');
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -31,4 +38,11 @@ Route::prefix('auth')->group(function () {
     Route::post('signout', [AuthController::class, 'signout'])->name('signout');
 });
 
+
+
+Route::get('/detail', function () {
+    return view('detail');
+});
+
 Route::get('/', [EventController::class, 'index'])->name('welcome');
+
