@@ -17,6 +17,9 @@ Route::get('/faq', function () {
 Route::get('/activities', function () {
     return view('activities');
 });
+Route::get('/profileMyTicket', function () {
+    return view('profileMyTicket');
+});
 
 Route::get('/myticket', function () {
     return view('myticket');
