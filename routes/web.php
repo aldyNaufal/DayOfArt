@@ -22,6 +22,9 @@ Route::get('/profilePersonalData', function () {
     return view('profilePersonalData');
 });
 
+Route::get('/activities', function () {
+    return view('activities');
+});
 Route::get('/profileMyTicket', function () {
     return view('profileMyTicket');
 });
@@ -56,9 +59,16 @@ Route::prefix('auth')->group(function () {
 
 
 
-Route::get('/detail', function () {
-    return view('detail');
+Route::prefix('detail')->group(function () {
+    Route::view('detail', 'web.details.detail')->name('detail');
 });
 
+
 Route::get('/', [EventController::class, 'index'])->name('welcome');
+Route::get('/admin/event', [EventController::class, 'indexAdmin'])->name('admin.event.index');
+Route::get('/admin/event/create', [EventController::class, 'createAdmin'])->name('admin.event.create');
+Route::post('/admin/event', [EventController::class, 'storeAdmin'])->name('admin.event.store');
+Route::get('/admin/event/{event}/edit', [EventController::class, 'editAdmin'])->name('admin.event.edit');
+Route::put('/admin/event/{event}/update', [EventController::class, 'updateAdmin'])->name('admin.event.update');
+Route::delete('/admin/event/{event}/destroy', [EventController::class, 'destroyAdmin'])->name('admin.event.destroy');
 
