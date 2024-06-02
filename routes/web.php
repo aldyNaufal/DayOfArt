@@ -13,6 +13,13 @@ Route::get('/faq', function () {
     return view('faq');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
+// Route::get('/schedule', function () {
+//     return view('schedule');
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
