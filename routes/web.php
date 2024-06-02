@@ -43,9 +43,10 @@ Route::prefix('auth')->group(function () {
 
 
 
-Route::get('/detail', function () {
-    return view('detail');
+Route::prefix('detail')->group(function () {
+    Route::view('detail', 'web.details.detail')->name('detail');
 });
+
 
 Route::get('/', [EventController::class, 'index'])->name('welcome');
 
