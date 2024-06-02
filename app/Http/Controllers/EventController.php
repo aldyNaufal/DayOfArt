@@ -82,4 +82,3 @@ class EventController extends Controller
     }
 
 }
-// php artisan storage:link jalankan command ini
