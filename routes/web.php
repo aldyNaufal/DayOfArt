@@ -25,3 +25,8 @@ Route::prefix('auth')->group(function () {
     Route::post('signup', [AuthController::class, 'signup'])->name('signup-post');
     Route::post('signout', [AuthController::class, 'signout'])->name('signout');
 });
+
+
+Route::get('/detail', function () {
+    return view('detail');
+});
