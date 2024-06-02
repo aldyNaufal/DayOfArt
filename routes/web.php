@@ -14,6 +14,14 @@ Route::get('/checkout', function () {
     return view('checkout');
 });
 
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+Route::get('/profilePersonalData', function () {
+    return view('profilePersonalData');
+});
+
 Route::get('/activities', function () {
     return view('activities');
 });
@@ -24,8 +32,9 @@ Route::get('/profileMyTicket', function () {
 Route::get('/myticket', function () {
     return view('myticket');
 });
-Route::get('/profilePersonalData', function () {
-    return view('profilePersonalData');
+
+Route::get('/profileBookmark', function () {
+    return view('profileBookmark');
 });
 
 Route::get('/about', function () {
@@ -56,4 +65,10 @@ Route::prefix('detail')->group(function () {
 
 
 Route::get('/', [EventController::class, 'index'])->name('welcome');
+Route::get('/admin/event', [EventController::class, 'indexAdmin'])->name('admin.event.index');
+Route::get('/admin/event/create', [EventController::class, 'createAdmin'])->name('admin.event.create');
+Route::post('/admin/event', [EventController::class, 'storeAdmin'])->name('admin.event.store');
+Route::get('/admin/event/{event}/edit', [EventController::class, 'editAdmin'])->name('admin.event.edit');
+Route::put('/admin/event/{event}/update', [EventController::class, 'updateAdmin'])->name('admin.event.update');
+Route::delete('/admin/event/{event}/destroy', [EventController::class, 'destroyAdmin'])->name('admin.event.destroy');
 
