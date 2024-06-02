@@ -14,6 +14,14 @@ Route::get('/faq', function () {
     return view('faq');
 });
 
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+Route::get('/profilePersonalData', function () {
+    return view('profilePersonalData');
+});
+
 Route::get('/profileMyTicket', function () {
     return view('profileMyTicket');
 });
@@ -21,8 +29,9 @@ Route::get('/profileMyTicket', function () {
 Route::get('/myticket', function () {
     return view('myticket');
 });
-Route::get('/profilePersonalData', function () {
-    return view('profilePersonalData');
+
+Route::get('/profileBookmark', function () {
+    return view('profileBookmark');
 });
 
 Route::get('/about', function () {
