@@ -14,6 +14,10 @@ Route::get('/faq', function () {
     return view('faq');
 });
 
+Route::get('/profileMyTicket', function () {
+    return view('profileMyTicket');
+});
+
 Route::get('/myticket', function () {
     return view('myticket');
 });
