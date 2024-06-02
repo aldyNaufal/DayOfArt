@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+// use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Models\Event;
+
 
 class EventController extends Controller
 {
@@ -79,6 +81,16 @@ class EventController extends Controller
 
     public function show(Event $event){
         return view('admin.event.show',['event' => $event]);
+    }
+
+    public function filterActivity(Request $request){
+        $activity = $request->category;
+    
+        $events = Event::all()->filter(function ($event) use ($activity) {
+            return stripos($event->activity, $activity) !== false;
+        });
+    
+        return view("/activities", ['events' => $events]);
     }
 
 }
