@@ -80,7 +80,6 @@
                     <button class="bg-pink-500 hover:bg-pink-600 text-white text-xs lg:text-lg font-semibold py-2 px-5 rounded-md">See all activities</button>
                 </div>
             </div>
-
         </div>
    
 
