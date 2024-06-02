@@ -15,14 +15,18 @@
         <div class="px-10 py-20 relative overflow-hidden  sm:px-5 xl:mt-20">
             <h1 class="text-2xl font-bold mb-5 lg:text-4xl">Upcoming Events</h1>
             <div class="grid grid-cols-4 gap-10 sm:mt-10 m:flex sm:flex-col sm:gap-5 lg:flex-row ml-20">
-                <div class="px-5 py-2 pb-10 shadow-lg rounded-md bg-white cursor-pointer transform transition-transform duration-300 hover:scale-105">
-                    <img src="" alt="" class="rounded-md w-full">
-                    <div class="flex lg:flex-row justify-between mt-5 items-center sm:flex-col">
-                        <h1 class="text-xl font-bold"></h1>
-                        <p class="text-sm text-gray-400 lg:ml-5"></p>
+                @foreach($events as $e)
+                <a href="{{ route('welcome', ['event_id' => $e->id])}}">
+                    <div class="px-5 py-2 pb-10 shadow-lg rounded-md bg-white h-96 cursor-pointer transform transition-transform duration-300 hover:scale-105">
+                        <img src="{{ asset( $e->image ) }}" alt="{{ $e->name }}" class="rounded-md">
+                        <div class="flex flex-row justify-between mt-5 items-center">
+                            <h1 class="text-xl font-bold">{{$e->name}}</h1>
+                            <p class="text-sm text-gray-400">{{ $e->date }}</p>
+                        </div>
+                        <p class="text-sm text-gray-400 mt-2 mb-3">{{ $e->city }}</p>
                     </div>
-                    <p class="text-sm text-gray-400 mt-2 mb-3"></p>
-                </div>
+                </a>
+                @endforeach     
             </div>
         </div>
 
