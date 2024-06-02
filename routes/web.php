@@ -17,6 +17,9 @@ Route::get('/faq', function () {
 Route::get('/myticket', function () {
     return view('myticket');
 });
+Route::get('/profilePersonalData', function () {
+    return view('profilePersonalData');
+});
 
 Route::get('/about', function () {
     return view('about');
