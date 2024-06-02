@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
@@ -32,3 +33,12 @@ Route::prefix('auth')->group(function () {
     Route::post('signup', [AuthController::class, 'signup'])->name('signup-post');
     Route::post('signout', [AuthController::class, 'signout'])->name('signout');
 });
+
+
+
+Route::get('/detail', function () {
+    return view('detail');
+});
+
+Route::get('/', [EventController::class, 'index'])->name('welcome');
+

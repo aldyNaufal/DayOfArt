@@ -1,83 +1,56 @@
 @extends('layouts.app')
 @section('content')
-<body class="bg-white text-gray-900">
+<div class="w-full ">
+    <div class="bg-gray-100 flex items-center justify-start min-h-screen">
+        <div class="relative w-full">
+            <img src="{{ asset('assets/images/welcome-screen.png') }}" alt="Day of Art" class="w-full object-cover min-h-screen">
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white">
+                <img src="{{ asset('assets/icons/logo DoA transparent 2.png') }}" alt="Logo doa" class="sm:w-[180px] xl:w-[200px] sm:ml-4 ">
+                <p class="text-2xl mb-4 lg:text-3xl font-bold">"Unleashing Creativity, One Day at a Time"</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ml-20 justify-start items-center">
+        <div class="px-20 py-20 relative overflow-hidden  sm:px-5 xl:mt-20">
+            <h1 class="font-bold lg:text-4xl sm:text-2xl sm:w-[400px] text-left">Upcoming Events</h1>
+            <div class="grid grid-cols-4 gap-10 sm:mt-10 m:flex sm:flex-col  sm:gap-5 lg:flex-row">
+                <div class="px-5 py-2 pb-10 shadow-lg rounded-md bg-white cursor-pointer transform transition-transform duration-300 hover:scale-105">
+                    <img src="" alt="" class="rounded-md w-full">
+                    <div class="flex lg:flex-row justify-between mt-5 items-center sm:flex-col">
+                        <h1 class="text-xl font-bold"></h1>
+                        <p class="text-sm text-gray-400 lg:ml-5"></p>
+                    </div>
+                    <p class="text-sm text-gray-400 mt-2 mb-3"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-20 py-20 relative overflow-hidden  sm:px-5 xl:mt-20">
+            <h1 class="font-bold lg:text-4xl sm:text-2xl sm:w-[400px] text-left">Event Schedule</h1>
+            <div class="grid grid-cols-4 gap-10 sm:mt-10 m:flex sm:flex-col sm:gap-5 lg:flex-row">
+                <div class="px-5 py-2 pb-10 shadow-lg rounded-md bg-white cursor-pointer transform transition-transform duration-300 hover:scale-105">
+                    <img src="" alt="" class="rounded-md w-full">
+                    <div class="flex lg:flex-row justify-between mt-5 items-center sm:flex-col">
+                        <h1 class="text-xl font-bold"></h1>
+                        <p class="text-sm text-gray-400 lg:ml-5"></p>
+                    </div>
+                    <p class="text-sm text-gray-400 mt-2 mb-3"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20 px-20 mb-20 relative overflow-hidden sm:px-5">
+            <h1 class="font-bold lg:text-4xl sm:text-2xl text-left">Categories</h1>
+            <div class="w-full grid gap-10 mt-10 sm:grid-cols-2 sm:gap-5">
+                <div class="relative flex flex-col items-center justify-center p-5 rounded-lg bg-white">
+                    <img src="" alt="" class="w-full h-auto rounded-lg shadow-lg cursor-pointer transform transition-transform duration-300 hover:scale-110">
+                    <h1 class="text-2xl font-bold mt-5 text-white absolute"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
    
 
-    <main>
-        <section class="bg-pink-200 py-16">
-            <div class="container mx-auto text-center">
-                <h1 class="text-5xl font-bold">Day of Art</h1>
-                <p class="text-xl mt-4">"Unleashing Creativity, One Day at a Time"</p>
-            </div>
-        </section>
-
-        <section class="py-16">
-            <div class="container mx-auto">
-                <h2 class="text-3xl font-bold mb-8">Upcoming Events</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white shadow-lg rounded-lg p-6">
-                        <img src="path/to/chunky-bag.jpg" alt="Chunky Bag Workshop" class="w-full h-48 object-cover rounded-md mb-4">
-                        <h3 class="text-2xl font-bold mb-2">Chunky Bag Workshop</h3>
-                        <p class="text-gray-700 mb-4">Sunday, 5 May 2024</p>
-                        <p class="text-pink-500 font-bold">M's Kitchen Magelang</p>
-                    </div>
-                    <div class="bg-white shadow-lg rounded-lg p-6">
-                        <img src="path/to/tiramisu-class.jpg" alt="Tiramisu Cooking Class" class="w-full h-48 object-cover rounded-md mb-4">
-                        <h3 class="text-2xl font-bold mb-2">Tiramisu Cooking Class</h3>
-                        <p class="text-gray-700 mb-4">Sunday, 5 May 2024</p>
-                        <p class="text-pink-500 font-bold">Vernon Education</p>
-                    </div>
-                    <div class="bg-white shadow-lg rounded-lg p-6">
-                        <img src="path/to/flower-arrangement.jpg" alt="Flowers Arrangement" class="w-full h-48 object-cover rounded-md mb-4">
-                        <h3 class="text-2xl font-bold mb-2">Flowers Arrangement</h3>
-                        <p class="text-gray-700 mb-4">Sunday, 5 May 2024</p>
-                        <p class="text-pink-500 font-bold">Paradia</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-gray-100 py-16">
-            <div class="container mx-auto">
-                <h2 class="text-3xl font-bold mb-8">Event Schedule</h2>
-                <div class="bg-white shadow-lg rounded-lg p-6">
-                    <p class="text-gray-700 mb-4">Discover a variety of exciting upcoming events! From inspiring seminars and beautiful art creations to relaxing handcrafted workshops, check out our full schedule on the Events Calendar page and mark your important dates.</p>
-                    <a href="#" class="text-pink-500 font-bold">See All Day of Art events</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-16">
-            <div class="container mx-auto">
-                <h2 class="text-3xl font-bold mb-8">Activities</h2>
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src="path/to/flower-bucket.jpg" alt="Flower Bucket" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold mb-2">Flower Bucket</h3>
-                        </div>
-                    </div>
-                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src="path/to/pottery.jpg" alt="Pottery" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold mb-2">Pottery</h3>
-                        </div>
-                    </div>
-                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src="path/to/cooking-class.jpg" alt="Cooking Class" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold mb-2">Cooking Class</h3>
-                        </div>
-                    </div>
-                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src="path/to/chunky-bag.jpg" alt="Chunky Bag" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold mb-2">Chunky Bag</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
+</div>
 @endsection
