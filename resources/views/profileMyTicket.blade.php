@@ -3,7 +3,7 @@
 <div class="container mx-auto px-4 py-16">
     <div class="flex flex-col lg:flex-row">
         <!-- Sidebar -->
-        <div class="w-full lg:ml-20 lg:w-1/4 mb-8 lg:mb-0">
+        <div class="w-full lg:ml-20 lg:w-1/4 mb-16 lg:mb-10">
             <ul class="space-y-3 bg-white p-6 rounded-lg shadow-lg">
                 <li>
                     <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">
@@ -12,13 +12,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg bg-pink-500 hover:bg-pink-600">
+                    <a href="/profilePersonalData" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">
                         <img src="/assets/images/avatar.png" class="w-6 h-6">
                         <span class="ml-3">Personal Data</span>
                     </a>
                 </li>
                 <li>
-                    <a href="/profileMyTicket" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">
+                    <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg bg-pink-500 text-white hover:bg-pink-600">
                         <img src="/assets/images/ticket-2-fill.png" class="w-6 h-6">
                         <span class="ml-3">Ticket</span>
                     </a>
@@ -44,34 +44,21 @@
             </ul>
         </div>
         <!-- Main Content -->
-        <div class="w-full lg:w-3/4 lg:mr-20 bg-white p-6 rounded-lg shadow-lg lg:ml-4">
+        <div class="w-full lg:mr-20 lg:w-3/4 mb-10 bg-white p-6 rounded-lg shadow-lg lg:ml-4">
             <div class="ml-4">
-                <h2 class="text-2xl font-bold mb-8">Personal Data</h2>
-                <div class="space-y-6">
-                    <div class="flex">
-                        <span class="w-1/4 font-semibold">Fullname</span>
-                        <span class="w-3/4">Muhammad Aldy Naufal</span>
+                <h2 class="text-2xl font-bold mb-10">My Ticket</h2>
+                <!-- Kotak dalem ticket -->
+                <div class="mt-8 bg-white p-6 stroke-grey rounded-lg shadow-xl mb-4 flex justify-start">
+                    <div class="w-1/5">
+                        <!-- Gambar ticket -->
+                        <img src="/assets/images/profileMyTicket/RectanglePink.png">
                     </div>
-                    <div class="flex">
-                        <span class="w-1/4 font-semibold">Surname</span>
-                        <span class="w-3/4">Aldy Ganteng</span>
-                    </div>
-                    <div class="flex">
-                        <span class="w-1/4 font-semibold">Birthday</span>
-                        <span class="w-3/4">28 / 02 / 2004</span>
-                    </div>
-                    <div class="flex">
-                        <span class="w-1/4 font-semibold">Phone Number</span>
-                        <span class="w-3/4">08123456789</span>
-                    </div>
-                    <div class="flex">
-                        <span class="w-1/4 font-semibold">Location</span>
-                        <span class="w-3/4">Jawa Timur, Malang</span>
+                    <div class="w-4/5 ml-1">
+                        <h2 class="text-xl font-bold">Tiramisu Cooking Class</h2>
+                        <h3 class="text-md">03 / 06 / 2024</h3>
+                        <h3 class="text-md">Venon Education, Malang</h3>
                     </div>
                 </div>
-            </div>
-            <div class="mt-6 mr-4 flex justify-end">
-                <button class="w-30 px-10 py-2 ml-4 bg-pink-500 text-white rounded-lg hover:bg-pink-600">Edit Data</button>
             </div>
         </div>
     </div>
