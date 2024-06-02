@@ -13,7 +13,7 @@
 
     <div class="justify-start items-center">
         <div class="px-10 py-20 relative overflow-hidden  sm:px-5 xl:mt-20">
-            <h1 class="text-2xl font-bold mb-5 lg:text-4xl">Upcoming Events</h1>
+            <h1 class="text-2xl font-bold mb-5 lg:text-4xl ml-20">Upcoming Events</h1>
             <div class="grid grid-cols-4 gap-10 sm:mt-10 m:flex sm:flex-col sm:gap-5 lg:flex-row ml-20">
                 <div class="px-5 py-2 pb-10 shadow-lg rounded-md bg-white cursor-pointer transform transition-transform duration-300 hover:scale-105">
                     <img src="" alt="" class="rounded-md w-full">
@@ -27,7 +27,7 @@
         </div>
 
         <div class="w-full p-5 overflow-hidden sm:px-5 xl:mt-20 bg-gray-200">
-        <h2 class="text-2xl font-bold mb-5 lg:text-4xl">Event Schedule</h2>
+        <h2 class="text-2xl font-bold mb-5 lg:text-4xl ml-20">Event Schedule</h2>
             <div class="mx-auto my-auto bg-white shadow-md rounded-md w-4/5 flex flex-row">
                 <div class="w-1/3">
                     <img src="{{ asset('assets/images/pottery.png') }}" class="w-full"></img>

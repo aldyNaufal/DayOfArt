@@ -39,12 +39,12 @@
                     <span>Tax</span>
                     <span>Rp0.00</span>
                 </div>
-                <div class="flex justify-between items-center font-semibold">
+                <div class="flex justify-between items-center font-bold">
                     <span>Total</span>
-                    <span class="text-pink-500">Rp40.000</span>
+                    <span class="text-pink-500 font-bold">Rp90.000</span>
                 </div>
             </div>
-            <button class="w-full bg-pink-500 text-white font-bold py-2 rounded mt-4">Buy Now</button>
+            <button class="w-full bg-pink-500 text-white font-bold py-2 rounded mt-4 hover:bg-pink-600">Buy Now</button>
         </div>
     </div>
 </div>
