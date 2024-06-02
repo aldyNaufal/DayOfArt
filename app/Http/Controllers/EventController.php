@@ -77,5 +77,8 @@ class EventController extends Controller
         return redirect(route('admin.event.index'));
     }
 
+    public function show(Event $event){
+        return view('admin.event.show', ['event' => $event]);
+    }
+
 }
-// php artisan storage:link jalankan command ini
