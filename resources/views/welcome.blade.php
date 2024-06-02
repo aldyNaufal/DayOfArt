@@ -11,10 +11,10 @@
         </div>
     </div>
 
-    <div class="ml-20 justify-start items-center">
-        <div class="px-20 py-20 relative overflow-hidden  sm:px-5 xl:mt-20">
-            <h1 class="font-bold lg:text-4xl sm:text-2xl sm:w-[400px] text-left">Upcoming Events</h1>
-            <div class="grid grid-cols-4 gap-10 sm:mt-10 m:flex sm:flex-col  sm:gap-5 lg:flex-row">
+    <div class="justify-start items-center">
+        <div class="px-10 py-20 relative overflow-hidden  sm:px-5 xl:mt-20">
+            <h1 class="text-2xl font-bold mb-5 lg:text-4xl">Upcoming Events</h1>
+            <div class="grid grid-cols-4 gap-10 sm:mt-10 m:flex sm:flex-col sm:gap-5 lg:flex-row ml-20">
                 <div class="px-5 py-2 pb-10 shadow-lg rounded-md bg-white cursor-pointer transform transition-transform duration-300 hover:scale-105">
                     <img src="" alt="" class="rounded-md w-full">
                     <div class="flex lg:flex-row justify-between mt-5 items-center sm:flex-col">
@@ -26,30 +26,62 @@
             </div>
         </div>
 
-        <div class="px-20 py-20 relative overflow-hidden  sm:px-5 xl:mt-20">
-            <h1 class="font-bold lg:text-4xl sm:text-2xl sm:w-[400px] text-left">Event Schedule</h1>
-            <div class="grid grid-cols-4 gap-10 sm:mt-10 m:flex sm:flex-col sm:gap-5 lg:flex-row">
-                <div class="px-5 py-2 pb-10 shadow-lg rounded-md bg-white cursor-pointer transform transition-transform duration-300 hover:scale-105">
-                    <img src="" alt="" class="rounded-md w-full">
-                    <div class="flex lg:flex-row justify-between mt-5 items-center sm:flex-col">
-                        <h1 class="text-xl font-bold"></h1>
-                        <p class="text-sm text-gray-400 lg:ml-5"></p>
+        <div class="w-full p-5 overflow-hidden sm:px-5 xl:mt-20 bg-gray-200">
+        <h2 class="text-2xl font-bold mb-5 lg:text-4xl">Event Schedule</h2>
+            <div class="mx-auto my-auto bg-white shadow-md rounded-md w-4/5 flex flex-row">
+                <div class="w-1/3">
+                    <img src="{{ asset('assets/images/pottery.png') }}" class="w-full"></img>
+                </div>
+                <div class="w-2/3 ml-5 mt-1 leading-5 flex flex-col justify-between xl:mt-3 xl:ml-10 xl:leading-10">
+                    <div>
+                        <span class="text-lg font-semibold text-left xl:text-xl">See All Day of Art events</span>
+                        <p class="md:w-4/5 ml-1 text-[9px] md:text-md lg:text-base xl:text-lg text-left xl:ml-3">
+                            Discover a variety of exciting upcoming events! From inspiring seminars and beautiful art creations to relaxing handcrafted workshops, check out our full schedule on the Events Calendar page and mark your important dates.
+                        </p>
                     </div>
-                    <p class="text-sm text-gray-400 mt-2 mb-3"></p>
+                    <div class="flex justify-end items-end text-white text-xs mb-3 mr-3 lg:text-lg ">
+                        <button class="bg-[#e145a6] hover:bg-[#cb3e95] rounded-xl px-5 py-1">See Calendar</button>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="mt-20 px-20 mb-20 relative overflow-hidden sm:px-5">
-            <h1 class="font-bold lg:text-4xl sm:text-2xl text-left">Categories</h1>
-            <div class="w-full grid gap-10 mt-10 sm:grid-cols-2 sm:gap-5">
-                <div class="relative flex flex-col items-center justify-center p-5 rounded-lg bg-white">
-                    <img src="" alt="" class="w-full h-auto rounded-lg shadow-lg cursor-pointer transform transition-transform duration-300 hover:scale-110">
-                    <h1 class="text-2xl font-bold mt-5 text-white absolute"></h1>
+        <div class="w-full p-5 overflow-hidden sm:px-5 xl:mt-20 bg-white">
+        <h2 class="text-2xl font-bold mb-5 lg:text-4xl">Activities</h2>
+        <div class="w-full px-5 py-10 bg-white shadow-md rounded-md mx-auto my-auto">
+                
+                <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
+                    <div class="relative bg-white shadow-md rounded-md overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-105">
+                        <img src="{{ asset('assets/images/flower-bucket.png') }}" alt="Flower Bucket" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <span class="text-white text-xl font-semibold">Flower Bucket</span>
+                        </div>
+                    </div>
+                    <div class="relative bg-white shadow-md rounded-md overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-105">
+                        <img src="{{ asset('assets/images/potrey-w.png') }}" alt="Pottery" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <span class="text-white text-xl font-semibold">Pottery</span>
+                        </div>
+                    </div>
+                    <div class="relative bg-white shadow-md rounded-md overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-105">
+                        <img src="{{ asset('assets/images/cooking-class.png') }}" alt="Cooking Class" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <span class="text-white text-xl font-semibold">Cooking Class</span>
+                        </div>
+                    </div>
+                    <div class="relative bg-white shadow-md rounded-md overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-105">
+                        <img src="{{ asset('assets/images/chunky-bag.png') }}" alt="Chunky Bag" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <span class="text-white text-xl font-semibold">Chunky Bag</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-end mt-4">
+                    <button class="bg-pink-500 hover:bg-pink-600 text-white text-xs lg:text-lg font-semibold py-2 px-5 rounded-md">See all activities</button>
                 </div>
             </div>
+
         </div>
-    </div>
    
 
 </div>
