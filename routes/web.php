@@ -74,6 +74,6 @@ Route::put('/admin/event/{event}/update', [EventController::class, 'updateAdmin'
 Route::delete('/admin/event/{event}/destroy', [EventController::class, 'destroyAdmin'])->name('admin.event.destroy');
 Route::get('/admin/event/{event}', [EventController::class, 'show'])->name('admin.event.show');
 
-Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+Route::get('/profile', [ProfileController::class, 'profileData'])->name('profile');
 
 Route::get('/activities', [EventController::class, 'filterActivity'])->name('filter.category');

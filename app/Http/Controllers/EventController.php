@@ -86,15 +86,19 @@ class EventController extends Controller
     public function filterActivity(Request $request){
         $activity = $request->category;
         
-        $query = Event::query();
+        $events = null;
 
-        $query->where('category',$activity);
+        if ($activity == ""){
+            $events = Event::all();
+        }
 
-        $events = $query->get();
-        // $events = Event::all()->filter(function ($event) use ($activity) {
-        //     return stripos($event->activity, $activity) !== false;
-        // });
-    
+        else {
+            $query = Event::query();
+
+            $query->where('category',$activity);
+
+            $events = $query->get();
+        }
         return view("/activities", ['events' => $events]);
     }
 
