@@ -72,6 +72,13 @@ Route::get('/about', function () {
     return view('web.static.about');
 });
 
+Route::get('/faq', function () {
+    return view('web.static.faq');
+});
+
+Route::get('/activities', function () {
+    return view('activities');
+});
 
 Route::get('/', [EventController::class, 'index'])->name('welcome');
 Route::get('/admin/event', [EventController::class, 'indexAdmin'])->name('admin.event.index');
