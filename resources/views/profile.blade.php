@@ -30,7 +30,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">
+                    <a href="{{route('signout')}}" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">
+                        @method('post')
                         <img src="/assets/images/logout-box-r-fill.png" class="w-6 h-6">
                         <span class="ml-3">Log out</span>
                     </a>
