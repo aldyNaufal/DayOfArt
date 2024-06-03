@@ -73,7 +73,7 @@ Route::get('/', [EventController::class, 'index'])->name('welcome');
 Route::get('/admin/event', [EventController::class, 'indexAdmin'])->name('admin.event.index');
 Route::get('/admin/event/create', [EventController::class, 'createAdmin'])->name('admin.event.create');
 Route::post('/admin/event', [EventController::class, 'storeAdmin'])->name('admin.event.store');
-Route::get('/admin/event/{event}/edit', [EventController::class, 'editAdmin'])->name('admin.event.edit');
+Route::get('/admin/event/{event}/edit', [EventController::class, 'editAdmin'])->name('a dmin.event.edit');
 Route::get('/admin/event/{event}', [EventController::class, 'show'])->name('admin.event.show');
 Route::put('/admin/event/{event}/update', [EventController::class, 'updateAdmin'])->name('admin.event.update');
 Route::delete('/admin/event/{event}/destroy', [EventController::class, 'destroyAdmin'])->name('admin.event.destroy');
