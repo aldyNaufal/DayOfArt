@@ -18,7 +18,7 @@
                             <option value="flower">flower</option>
                         </select>
                     </div>
-                    <input type="submit" value="apply">
+                    <button type="submit" class="bg-pink-500 text-white py-2 px-4 rounded-md shadow-sm hover:bg-pink-600 transition-colors duration-300">Apply</button>
                 </form>
             </div>
         </div>
