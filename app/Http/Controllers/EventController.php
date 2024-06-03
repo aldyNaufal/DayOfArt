@@ -83,14 +83,11 @@ class EventController extends Controller
         return view('admin.event.show',['event' => $event]);
     }
 
-    public function filterActivity(Request $request){
-        $activity = $request->category;
-    
-        $events = Event::all()->filter(function ($event) use ($activity) {
-            return stripos($event->activity, $activity) !== false;
-        });
-    
-        return view("/activities", ['events' => $events]);
+    public function filterCategory(Request $request)
+    {
+        $category = $request->input('category');
+        $filteredData = Event::where('category', $category)->get();
+        return view('activities', ['events' => $filteredData]);
     }
 
 }

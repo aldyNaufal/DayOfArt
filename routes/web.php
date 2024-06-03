@@ -76,4 +76,4 @@ Route::get('/admin/event/{event}', [EventController::class, 'show'])->name('admi
 
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
-Route::get('/activities', [EventController::class, 'filterActivity'])->name('filter.category');
+Route::get('/activities', [EventController::class, 'filterCategory'])->name('filter.category');
