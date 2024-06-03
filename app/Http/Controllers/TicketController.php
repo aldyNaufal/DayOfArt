@@ -10,7 +10,15 @@ use Illuminate\Support\Facades\Auth;
 class TicketController extends Controller
 {
     //
+    public function create(Event $event){
+        $userId = Auth::user()->id;
+        $eventId = $event->id;
 
+        Ticket::create([
+            'idUser' => $userId,
+            'idEvent' => $eventId
+        ]);
+    }
     public function myTicket(){
         $userId = Auth::user()->id;
         $query = Ticket::query();

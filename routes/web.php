@@ -101,3 +101,5 @@ Route::put('/profile/{user}/update', [ProfileController::class, 'profileUpdate']
 Route::get('/profilePersonalData', [ProfileController::class, 'profilePersonalData'])->name('profile.personal');
 
 Route::get('/profileMyTicket', [TicketController::class, 'myTicket'])->name('profile.ticket');
+
+Route::get('/{event}/detail', [TicketController::class, 'create'])->name('ticket.create');
