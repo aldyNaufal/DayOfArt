@@ -46,7 +46,7 @@
                         <img src="/assets/images/fotoProfile.png" class="w-full h-34 rounded-lg mx-auto">
                     </div>
                     <div class="lg:w-3/4 ml-8">
-                        <h2 class="text-2xl font-bold mt-4 mb-2">Muhammad Aldy</h2>
+                        <h2 class="text-2xl font-bold mt-4 mb-2"></h2>
                         <h3 class="text-black font-medium mb-4">Aldy Ganteng</h3>
                         <button class="bg-pink-500 text-white px-4 py-2 rounded-lg mb-4 hover:bg-pink-600">Change Profile Picture</button>
                     </div>
