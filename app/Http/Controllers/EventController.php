@@ -37,7 +37,7 @@ class EventController extends Controller
         ]);
 
         $image = $request->file('image');
-        $destinationPath = "storage";
+        $destinationPath = "assets/storage";
         $lastEvent = Event::latest('id')->first();
         $newId = $lastEvent ? $lastEvent->id + 1 : 1;
         $lastEvent = (string)$newId;
@@ -83,11 +83,23 @@ class EventController extends Controller
         return view('admin.event.show',['event' => $event]);
     }
 
-    public function filterCategory(Request $request)
-    {
-        $category = $request->input('category');
-        $filteredData = Event::where('category', $category)->get();
-        return view('activities', ['events' => $filteredData]);
+    public function filterActivity(Request $request){
+        $activity = $request->category;
+        
+        $events = null;
+
+        if ($activity == ""){
+            $events = Event::all();
+        }
+
+        else {
+            $query = Event::query();
+
+            $query->where('category',$activity);
+
+            $events = $query->get();
+        }
+        return view("/activities", ['events' => $events]);
     }
 
 }

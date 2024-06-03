@@ -1,26 +1,26 @@
 @extends('layouts.app')
 @section('content')
 
-<main class="p-8">
-    <section class="text-center mb-12">
-        <h1 class="text-3xl font-bold text-pink-500 mb-4">Activities</h1>
-    </section>
-    <div class="flex justify-center items-center space-x-4 mb-8">
-        <div class="relative" x-data="{ open: false }">
-            <form action="{{route('filter.category')}}" method="get">
-                <div class="form-group mb-4">
-                    <label for="category" class="block">Activities</label>
-                    <select name="category" id="category" class="bg-white border border-gray-300 rounded-md py-2 px-4 shadow-sm flex items-center space-x-2">
-                        <option value="1">bag</option>
-                        <option value="2">pottery</option>
-                        <option value="3">cooking</option>
-                        <option value="4">flower</option>
-                    </select>
-                </div>
-                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Filter</button>
-            </form>
+<body>
+    <main class="p-8">
+        <section class="text-center mb-12">
+            <h1 class="text-3xl font-bold text-pink-500 mb-4">Activities</h1>
+        </section>
+        <div class="flex justify-center items-center space-x-4 mb-8">
+            <div class="relative" x-data="{ open: false }">
+                <form action="{{route('filter.category')}}" method="get" enctype="">
+                    <div class="form-group mb-4">
+                        <label for="category" class="block">Activities</label>
+                        <select name="category" id="category" class="bg-white border border-gray-300 rounded-md py-2 px-4 shadow-sm flex items-center space-x-2" >
+                            <option value="1">bag</option>
+                            <option value="2">pottery</option>
+                            <option value="3">cooking</option>
+                            <option value="4">flower</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
 
     <div class="justify-start items-center">
         <div class="px-10 py-20 relative overflow-hidden sm:px-5 xl:mt-5">

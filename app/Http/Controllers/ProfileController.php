@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
+use App\Models\User;
 
 class ProfileController extends Controller
 {
@@ -60,5 +61,16 @@ class ProfileController extends Controller
         $request->session()->regenerateToken();
 
         return Redirect::to('/');
+    }
+
+    public function profileData(){
+        $userId = Auth::user()->id;
+        $query = User::query();
+        $query->where('id',$userId);
+
+        $user = $query->get();
+        $user = $user[0];
+
+        return view('profile',['user' => $user]);
     }
 }

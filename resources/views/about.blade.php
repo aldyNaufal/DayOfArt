@@ -11,7 +11,7 @@
                 <div class="flex">
                     <div class="w-1/2 justify-center">
                         <h2 class="text-2xl font-bold mb-4">About Day of Art</h2>
-                        <p class="text-left text-justify text-black-600 mb-6">
+                        <p class="text-justify text-black-600 mb-6">
                         Pada Agustus 2023, Day of Art diluncurkan untuk mendorong kreativitas dan memperkaya masyarakat Indonesia melalui workshop akhir pekan dan kolaborasi dengan merek lokal. 
                         Kami percaya seni lokal bisa menciptakan dampak positif dan Day of Art menjadi wadah untuk menggali potensi tersebut. Sejak diluncurkan, Day of Art telah menerima lima tawaran kolaborasi dari merek lokal dan kafe. 
                         Minat ini menunjukkan potensi platform kami sebagai penghubung efektif antara masyarakat dan merek lokal, serta mengubah cara seni, acara, dan merek bekerja sama di Indonesia.
