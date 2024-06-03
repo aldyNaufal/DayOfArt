@@ -12,12 +12,13 @@
                     <div class="form-group mb-4">
                         <label for="category" class="block">Activities</label>
                         <select name="category" id="category" class="bg-white border border-gray-300 rounded-md py-2 px-4 shadow-sm flex items-center space-x-2" >
-                            <option value="1">bag</option>
-                            <option value="2">pottery</option>
-                            <option value="3">cooking</option>
-                            <option value="4">flower</option>
+                            <option value="bag">bag</option>
+                            <option value="pottery">pottery</option>
+                            <option value="cooking">cooking</option>
+                            <option value="flower">flower</option>
                         </select>
                     </div>
+                    <input type="submit" value="apply">
                 </form>
             </div>
         </div>
