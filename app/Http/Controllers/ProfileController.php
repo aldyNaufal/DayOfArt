@@ -73,4 +73,9 @@ class ProfileController extends Controller
 
         return view('profile',['user' => $user]);
     }
+
+    public function profileEdit(){
+        $user = Auth::user();
+        return view('editProfile', ['user'=>$user]);
+    }
 }
