@@ -34,7 +34,7 @@ class TicketController extends Controller
             $event = $event[0];
             $temp = [
                 'idTicket'=>$ticket->id,
-                'event'=>$event
+                'event'=>$event->name
             ];
             array_push($pair,$temp);
         }
