@@ -92,4 +92,15 @@ class ProfileController extends Controller
         $user->update($data);
         return redirect('profile');
     }
+
+    public function profilePersonalData(){
+        $userId = Auth::user()->id;
+        $query = User::query();
+        $query->where('id',$userId);
+
+        $user = $query->get();
+        $user = $user[0];
+
+        return view('profilePersonalData',['user' => $user]);
+    }
 }

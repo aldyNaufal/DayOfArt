@@ -64,9 +64,12 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-6 mr-4 flex justify-end">
-                <button class="w-30 px-10 py-2 ml-4 bg-pink-500 text-white rounded-lg hover:bg-pink-600">Edit Data</button>
-            </div>
+            <a href="{{route('profile.edit',['user'=>$user])}}">
+                <div class="mt-6 mr-4 flex justify-end">
+                    <div class="w-30 px-10 py-2 ml-4 bg-pink-500 text-white rounded-lg hover:bg-pink-600">Edit Profile</div>
+                </div>
+            </a>
+            
         </div>
     </div>
 </div>

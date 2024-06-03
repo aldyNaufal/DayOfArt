@@ -97,3 +97,5 @@ Route::get('/{event}/detail', [EventController::class, 'details'])->name('detail
 
 Route::get('/editProfile', [ProfileController::class, 'profileEdit'])->name('profile.edit');
 Route::put('/profile/{user}/update', [ProfileController::class, 'profileUpdate'])->name('profile.update');
+Route::get('/profilePersonalData', [ProfileController::class, 'profilePersonalData'])->name('profile.personal');
+
