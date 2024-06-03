@@ -37,9 +37,9 @@
                     <img src="{{ asset('assets/images/pottery.png') }}" class="w-full"></img>
                 </div>
                 <div class="w-2/3 ml-5 mt-1 leading-5 flex flex-col justify-between xl:mt-3 xl:ml-10 xl:leading-10">
-                    <div>
-                        <span class="text-lg font-semibold text-left xl:text-xl">See All Day of Art events</span>
-                        <p class="md:w-4/5 ml-1 text-[9px] md:text-md lg:text-base xl:text-lg text-left xl:ml-3">
+                    <div class="mt-8">
+                        <span class="text-3xl font-bold text-left">See All Day of Art events</span>
+                        <p class="md:w-4/5 ml-1 text-[9px] md:text-md mt-4 lg:text-base xl:text-lg text-left xl:ml-8 text-justify">
                             Discover a variety of exciting upcoming events! From inspiring seminars and beautiful art creations to relaxing handcrafted workshops, check out our full schedule on the Events Calendar page and mark your important dates.
                         </p>
                     </div>

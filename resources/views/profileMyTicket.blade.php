@@ -45,7 +45,7 @@
                 <div class="mt-8 bg-white p-6 stroke-grey rounded-lg shadow-xl mb-4 flex justify-start">
                     <div class="w-1/5">
                         <!-- Gambar ticket -->
-                        <img src="/assets/images/profileMyTicket/RectanglePink.png">
+                        <img src="/assets/images/RectanglePink.png">
                     </div>
                     <div class="w-4/5 ml-1">
                         <h2 class="text-xl font-bold">Tiramisu Cooking Class</h2>
