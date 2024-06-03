@@ -6,8 +6,7 @@
         <div class="w-full lg:ml-20 lg:w-1/4 mb-8 lg:mb-0">
             <ul class="space-y-3 bg-white p-6 rounded-lg shadow-lg">
                 <li>
-                    <a href="/profile" class="flex items-center p-2 text-gray-900 rounded-lg bg-pink-500 
-                     hover:bg-pink-600">
+                    <a href="/profile" class="flex items-center p-2 text-gray-900 rounded-lg bg-pink-500  hover:bg-pink-600">
                         <img src="/assets/images/avatar.png" class="w-6 h-6">
                         <span class="ml-3">Profile</span>
                     </a>
@@ -81,10 +80,7 @@
                     <div class="mb-4">
                         <span>•••••••</span>
                     </div>
-                    <a href="{{route('profile.edit',['user'=>$user])}}">
-                        <div class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600">Edit Profile</div>
-                    </a>
-                    
+                    <button class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600">Edit Profile</button>
                 </div>
             </div>
         </div>

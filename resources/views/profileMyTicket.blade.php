@@ -18,7 +18,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/profileMyTicket" class="flex items-center p-2 text-gray-900 rounded-lg bg-pink-500 text-white hover:bg-pink-600">
+                    <a href="/profileMyTicket" class="flex items-center p-2 text-gray-900 rounded-lg bg-pink-50 hover:bg-pink-600">
                         <img src="/assets/images/ticket-2-fill.png" class="w-6 h-6">
                         <span class="ml-3">Ticket</span>
                     </a>
@@ -43,15 +43,18 @@
                 <h2 class="text-2xl font-bold mb-10">My Ticket</h2>
                 <!-- Kotak dalem ticket -->
                 <div class="mt-8 bg-white p-6 stroke-grey rounded-lg shadow-xl mb-4 flex justify-start">
+                @foreach($pair as $temp)
                     <div class="w-1/5">
-                        <!-- Gambar ticket -->
-                        <img src="/assets/images/RectanglePink.png">
+                        <!-- Gambar tiket -->
+                        <img src="{{ $temp->event->image }}" alt="{{ $temp->event->name }}">
                     </div>
+                 
                     <div class="w-4/5 ml-1">
-                        <h2 class="text-xl font-bold">Tiramisu Cooking Class</h2>
-                        <h3 class="text-md">03 / 06 / 2024</h3>
-                        <h3 class="text-md">Venon Education, Malang</h3>
+                        <h2 class="text-xl font-bold">{{ $temp->event->name }}</h2>
+                        <h3 class="text-md">{{ $temp->event->date }}</h3>
+                        <h3 class="text-md">{{ $temp->event->city }}</h3>
                     </div>
+                    @endforeach
                     <div class="mt-20 mr-4 flex justify-end">
                 <button class="w-40 h-10 px-10 py-1 bg-pink-500 text-white rounded-lg hover:bg-pink-600">See ticket</button>
             </div>
