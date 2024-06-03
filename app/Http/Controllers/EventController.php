@@ -37,7 +37,7 @@ class EventController extends Controller
         ]);
 
         $image = $request->file('image');
-        $destinationPath = "storage";
+        $destinationPath = "assets/storage";
         $lastEvent = Event::latest('id')->first();
         $newId = $lastEvent ? $lastEvent->id + 1 : 1;
         $lastEvent = (string)$newId;
