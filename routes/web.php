@@ -68,6 +68,10 @@ Route::prefix('static')->group(function () {
     Route::view('about', 'web.static.about')->name('about');
 });
 
+Route::get('/about', function () {
+    return view('web.static.about');
+});
+
 
 Route::get('/', [EventController::class, 'index'])->name('welcome');
 Route::get('/admin/event', [EventController::class, 'indexAdmin'])->name('admin.event.index');
