@@ -69,6 +69,7 @@ class ProfileController extends Controller
         $query->where('id',$userId);
 
         $user = $query->get();
+        $user = $user[0];
 
         return view('profile',['user' => $user]);
     }
