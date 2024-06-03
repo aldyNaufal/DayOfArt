@@ -37,9 +37,7 @@ Route::get('/profileBookmark', function () {
     return view('profileBookmark');
 });
 
-Route::get('/about', function () {
-    return view('about');
-});
+
 
 // Route::get('/schedule', function () {
 //     return view('schedule');
@@ -66,6 +64,10 @@ Route::prefix('detail')->group(function () {
 Route::prefix('static')->group(function () {
     Route::view('faq', 'web.static.faq')->name('faq');
     Route::view('about', 'web.static.about')->name('about');
+});
+
+Route::get('/about', function () {
+    return view('web.static.about');
 });
 
 

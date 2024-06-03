@@ -46,8 +46,8 @@
                         <img src="/assets/images/fotoProfile.png" class="w-full h-34 rounded-lg mx-auto">
                     </div>
                     <div class="lg:w-3/4 ml-8">
-                        <h2 class="text-2xl font-bold mt-4 mb-2"></h2>
-                        <h3 class="text-black font-medium mb-4">Aldy Ganteng</h3>
+                        <h2 class="text-2xl font-bold mt-4 mb-2">{{$user->fullname}}</h2>
+                        <h3 class="text-black font-medium mb-4">{{$user->surname}}</h3>
                         <button class="bg-pink-500 text-white px-4 py-2 rounded-lg mb-4 hover:bg-pink-600">Change Profile Picture</button>
                     </div>
                 </div>
@@ -69,13 +69,13 @@
                 </div>
                 <div class="w-full">
                     <div class="mt-4 mb-2">
-                        <span>Aldy Ganteng Banget</span>
+                        <span>{{$user->fullname}}</span>
                     </div>
                     <div class="mb-2">
-                        <span>Aldygty@gmail.com</span>
+                        <span>{{$user->email}}</span>
                     </div>
                     <div class="mb-2">
-                        <span>+62 1234567891</span>
+                        <span>{{$user->phoneNumber}}</span>
                     </div>
                     <div class="mb-4">
                         <span>•••••••</span>
