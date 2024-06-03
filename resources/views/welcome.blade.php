@@ -15,7 +15,7 @@
         <div class="px-10 py-20 relative overflow-hidden  sm:px-5 xl:mt-5">
             <div class="grid grid-cols-4 gap-10 sm:mt-10 m:flex sm:flex-col sm:gap-5 lg:flex-row ml-20">
                 @foreach($events->take(4) as $e)
-                <a href="{{ route('detail', ['event'=>$e])}}">
+                <a href="{{ route('details', ['event'=>$e])}}">
                     <div class="px-5 py-2 pb-10 shadow-lg rounded-md bg-white h-96 cursor-pointer transform transition-transform duration-300 hover:scale-105">
                         <img src="{{ asset( $e->image ) }}" alt="{{ $e->name }}" class="rounded-md">
                         <div class="flex flex-row justify-between mt-5 items-center">

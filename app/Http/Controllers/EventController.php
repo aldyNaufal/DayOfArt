@@ -102,5 +102,8 @@ class EventController extends Controller
         return view("/activities", ['events' => $events]);
     }
 
+    public function details(Event $event){
+        return view('web.details.detail',['event'=>$event]);
+    }
 }
 
