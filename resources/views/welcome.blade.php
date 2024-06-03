@@ -17,7 +17,7 @@
             <div class="grid grid-cols-4 gap-10 sm:mt-10 sm:flex sm:flex-col sm:gap-5 lg:flex-row ml-20">
                 @foreach($events->take(3) as $e)
                 <a href="{{ route('welcome', ['event_id' => $e->id])}}">
-                    <div class="px-5 py-2 pb-10 shadow-lg rounded-md bg-white h-96 cursor-pointer transform transition-transform duration-300 hover:scale-105">
+                    <div class="px-5 py-2 pb-10 shadow-lg rounded-md bg-white h-96 cursor-pointer transform transition-transform duration-300 hover:scale-105" >
                         <img src="{{ asset($e->image) }}" alt="{{ $e->name }}" class="rounded-md">
                         <div class="flex flex-row justify-between mt-5 items-center">
                             <h1 class="text-xl font-bold">{{ $e->name }}</h1>
