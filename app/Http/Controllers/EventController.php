@@ -101,5 +101,6 @@ class EventController extends Controller
         }
         return view("/activities", ['events' => $events]);
     }
+
 }
 
