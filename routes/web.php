@@ -63,6 +63,11 @@ Route::prefix('detail')->group(function () {
     Route::view('detail', 'web.details.detail')->name('detail');
 });
 
+Route::prefix('static')->group(function () {
+    Route::view('faq', 'web.static.faq')->name('faq');
+    Route::view('about', 'web.static.about')->name('about');
+});
+
 
 Route::get('/', [EventController::class, 'index'])->name('welcome');
 Route::get('/admin/event', [EventController::class, 'indexAdmin'])->name('admin.event.index');
