@@ -86,6 +86,6 @@ Route::get('/admin/event/{event}', [EventController::class, 'show'])->name('admi
 Route::get('/profile', [ProfileController::class, 'profileData'])->name('profile');
 
 Route::get('/activities', [EventController::class, 'filterActivity'])->name('filter.category');
-Route::get('/{event}/detail', [EventController::class, 'details'])->name('detail');
+Route::get('/{event}/detail', [EventController::class, 'details'])->name('details');
 
 Route::get('/editProfile', [ProfileController::class, 'profileEdit'])->name('profile.edit');
