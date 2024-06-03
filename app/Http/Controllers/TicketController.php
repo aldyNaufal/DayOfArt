@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Ticket;
+use App\Models\Event;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -16,6 +17,19 @@ class TicketController extends Controller
         $query->where('idUser',$userId);
 
         $tickets = $query->get();
-        return view('profileMyTicket',['tickets' => $tickets]);
+        $pair = array();
+        foreach($tickets as $ticket){
+            $q = Event::query();
+            $q->where('id',$ticket->idEvent);
+            $event = $q->get();
+            $event = $event[0];
+            $temp = [
+                'idTicket'=>$ticket->id,
+                'event'=>$event
+            ];
+            array_push($pair,$temp);
+        }
+
+        return view('profileMyTicket',['pair' => $pair]);
     }
 }
