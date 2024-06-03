@@ -78,4 +78,29 @@ class ProfileController extends Controller
         $user = Auth::user();
         return view('editProfile', ['user'=>$user]);
     }
+
+    public function profileUpdate(User $user, Request $request){
+        $data = [
+            'fullname' => $request->fullname,
+            'email' => $user->email,
+            'password' => $user->password,
+            'surname' => $request->surname,
+            'birthdate' => $request->birthdate,
+            'phoneNumber' => $request->phoneNumber
+        ];      
+        
+        $user->update($data);
+        return redirect('profile');
+    }
+
+    public function profilePersonalData(){
+        $userId = Auth::user()->id;
+        $query = User::query();
+        $query->where('id',$userId);
+
+        $user = $query->get();
+        $user = $user[0];
+
+        return view('profilePersonalData',['user' => $user]);
+    }
 }

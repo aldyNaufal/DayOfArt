@@ -10,7 +10,9 @@
                 </div>
             </div>
             <h2 class="text-2xl font-bold my-4">Edit Profile</h2>
-            <form action="#">
+            <form  method="post" action="{{route('profile.update', ['user' => $user])}}" >
+                @csrf
+                @method('put')
                 <div class="mb-4">
                     <label for="fullname" class="block text-sm font-medium text-gray-700">Fullname</label>
                     <input type="text" id="fullname" name="fullname" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Type your fullname here">
@@ -28,8 +30,9 @@
                     <label for="phone" class="block text-sm font-medium text-gray-700">Phone number</label>
                     <input type="text" id="phone" name="phone" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Type your phone number here">
                 </div>
-                <button type="submit" class="w-full bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">Save data</button>
+                <input type="submit" class="w-full bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded" >Save data</input>
             </form>
         </div>
     </div>
 </div>
+@endsection

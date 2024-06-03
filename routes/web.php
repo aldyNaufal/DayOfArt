@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TicketController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
@@ -96,3 +97,7 @@ Route::get('/activities', [EventController::class, 'filterActivity'])->name('fil
 Route::get('/{event}/detail', [EventController::class, 'details'])->name('details');
 
 Route::get('/editProfile', [ProfileController::class, 'profileEdit'])->name('profile.edit');
+Route::put('/profile/{user}/update', [ProfileController::class, 'profileUpdate'])->name('profile.update');
+Route::get('/profilePersonalData', [ProfileController::class, 'profilePersonalData'])->name('profile.personal');
+
+Route::get('/profileMyTicket', [TicketController::class, 'myTicket'])->name('profile.ticket');

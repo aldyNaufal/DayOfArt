@@ -81,7 +81,10 @@
                     <div class="mb-4">
                         <span>•••••••</span>
                     </div>
-                    <button class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600">Edit Profile</button>
+                    <a href="{{route('profile.edit',['user'=>$user])}}">
+                        <div class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600">Edit Profile</div>
+                    </a>
+                    
                 </div>
             </div>
         </div>
