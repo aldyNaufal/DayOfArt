@@ -8,7 +8,7 @@
 
     <div class="w-4/5 mx-auto px-6 py-10 bg-white shadow-md relative">
         <div class="flex justify-start flex-col">
-            <h1 class="lg:text-3xl font-bold sm:text-xl">Tiramisu Cooking Class</h1>
+            <h1 class="lg:text-3xl font-bold sm:text-xl">{{$event->name}}</h1>
             <div class="flex flex-row lg:pb-10">
                 <img src="{{ asset('assets/icons/location.png') }}" alt="location" class="mb-4 lg:w-6 mt-4 sm:w-4 sm:h-4"/>
                 <p class="text-gray-600 ml-2 lg:mt-4 sm:mt-3 lg:text-base sm:text-md">Vernon Education, Malang</p>
