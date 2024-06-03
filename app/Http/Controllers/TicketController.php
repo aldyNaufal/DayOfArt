@@ -18,6 +18,7 @@ class TicketController extends Controller
             'idUser' => $userId,
             'idEvent' => $eventId
         ]);
+        return view('web.details.detail', ['event' => $event]);
     }
     public function myTicket(){
         $userId = Auth::user()->id;

@@ -80,8 +80,9 @@
     <div class="bg-gray-100 p-4 rounded-md mb-6">
         <div class="w-2/3 mx-auto px-6 py-10 bg-white">
             <h2 class="text-2xl font-bold">Choose your ticket</h2>
-            <form action="#" method="POST" class="mt-4">
+            <form action="{{route('ticket.create', ['event'=>$event])}}" method="post" class="mt-4">
                 @csrf
+                @method('post')
                 <div class="flex items-center justify-between mb-10 border-2 border-solid p-5 border-black">
                     <label for="ticket" class="text-black font-semibold">Tiramisu Cooking Class</label>
                     <div class="flex flex-row">
