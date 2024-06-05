@@ -12,7 +12,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="profilePersonalData" class="flex items-center p-2 text-gray-900 rounded-lg bg-pink-500 text-white hover:bg-pink-600">
+                    <a href="profilePersonalData" class="flex items-center p-2 text-gray-900 rounded-lg bg-pink-500 hover:bg-pink-600">
                         <img src="/assets/images/avatar.png" class="w-6 h-6">
                         <span class="ml-3">Personal Data</span>
                     </a>
@@ -64,9 +64,12 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-6 mr-4 flex justify-end">
-                <button class="w-30 px-10 py-2 ml-4 bg-pink-500 text-white rounded-lg hover:bg-pink-600">Edit Data</button>
-            </div>
+            <a href="{{route('profile.edit',['user'=>$user])}}">
+                <div class="mt-6 mr-4 flex justify-end">
+                    <div class="w-30 px-10 py-2 ml-4 bg-pink-500 text-white rounded-lg hover:bg-pink-600">Edit Profile</div>
+                </div>
+            </a>
+            
         </div>
     </div>
 </div>

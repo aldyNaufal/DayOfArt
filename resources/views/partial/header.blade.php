@@ -1,4 +1,3 @@
-
 <div class="w-full bg-[#E145A6] 2xl:py-2 2xl:px-16 xl:px-18 xl:pr-10 lg:py-2 lg:px-12 md:py-2 md:px-10 sm:px-6 sm:py-2 flex flex-row justify-between items-center shadow-md">
     <div class="flex flex-row 2xl:gap-8 xl:gap-6 lg:gap-6 md:gap-6 sm:gap-5 text-[#fcecf6] font-light items-center">
         <img src="{{ asset('assets/icons/logo DoA transparent 2.png') }}" alt="Logo doa" class="sm:w-12 sm:ml-4 md:w-15 lg:w-18 xl:w-20 2xl:w-22 ">
@@ -27,6 +26,10 @@
     <div class="flex flex-row justify-center items-center md:mr-5 lg:mr-15 xl:mr-[50px] 2xl:ml-[20px]">
         <img src="{{ asset('assets/images/profile.png') }}" alt="Profile Icon" class="sm:w-4 sm:h-4 sm:mr-1 xl:w-5 xl:h-5">
         <a href="{{ route('profile') }}" class="text-[#fcecf6] hover:text-[#cb3e95] 2xl:text-xl sm:text-xs md:text-sm lg:text-md xl:text-lg">Profile</a>
+        <form method="POST" action="{{ route('signout') }}" class="ml-4">
+            @csrf
+            <button type="submit" class="text-[#fcecf6] hover:text-[#cb3e95] 2xl:text-xl sm:text-xs md:text-sm lg:text-md xl:text-lg font-bold">Sign Out</button>
+        </form>
     </div>
     @endauth
 

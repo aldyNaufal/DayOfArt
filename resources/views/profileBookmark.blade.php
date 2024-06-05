@@ -24,7 +24,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/profileBookmark" class="flex items-center p-2 text-gray-900 rounded-lg bg-pink-500 text-white hover:bg-pink-600">
+                    <a href="/profileBookmark" class="flex items-center p-2 text-gray-900 rounded-lg bg-pink-500  hover:bg-pink-600">
                         <img src="/assets/images/file-list-fill.png" class="w-6 h-6">
                         <span class="ml-3">Bookmark</span>
                     </a>

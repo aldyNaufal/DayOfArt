@@ -18,7 +18,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/profileMyTicket" class="flex items-center p-2 text-gray-900 rounded-lg bg-pink-500 text-white hover:bg-pink-600">
+                    <a href="/profileMyTicket" class="flex items-center p-2 text-gray-900 rounded-lg bg-pink-50 hover:bg-pink-600">
                         <img src="/assets/images/ticket-2-fill.png" class="w-6 h-6">
                         <span class="ml-3">Ticket</span>
                     </a>
