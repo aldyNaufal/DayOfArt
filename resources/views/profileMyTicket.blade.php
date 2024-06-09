@@ -53,8 +53,8 @@
                         <h3 class="text-md">Venon Education, Malang</h3>
                     </div>
                     <div class="mt-20 mr-4 flex justify-end">
-                <button class="w-40 h-10 px-10 py-1 bg-pink-500 text-white rounded-lg hover:bg-pink-600">See ticket</button>
-            </div>
+                        <a href="/myticket" class="w-40 h-10 px-10 py-1 bg-pink-500 text-white rounded-lg hover:bg-pink-600 text-center">See ticket</a>
+                    </div>
                 </div>
             </div>
         </div>
