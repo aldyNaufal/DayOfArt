@@ -15,7 +15,7 @@ Route::view('/activities', 'activities');
 Route::view('/profileMyTicket', 'profileMyTicket');
 Route::view('/myticket', 'myticket');
 Route::view('/profileBookmark', 'profileBookmark');
-Route::view('/about', 'web.static.about');
+Route::view('/about', 'about');
 Route::view('/dashboard', 'dashboard')->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::prefix('auth')->group(function () {
