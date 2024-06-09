@@ -80,7 +80,7 @@
     <div class="bg-gray-100 p-4 rounded-md mb-6">
         <div class="w-2/3 mx-auto px-6 py-10 bg-white">
             <h2 class="text-2xl font-bold">Choose your ticket</h2>
-            <form action="{{route('ticket.create', ['event'=>$event])}}" method="post" class="mt-4">
+            <form id="registerForm" action="{{ route('ticket.create', ['event' => $event]) }}" method="post" class="mt-4">
                 @csrf
                 @method('post')
                 <div class="flex items-center justify-between mb-10 border-2 border-solid p-5 border-black">
@@ -95,7 +95,7 @@
                         <span class="md:text-xl font-bold text-[#e145a6] sm:text-sm"> Total Price :</span>
                         <span class="md:text-xl font-bold text-black sm:text-sm"> Rp 90.000</span>
                     </div>
-                    <button type="submit" class="bg-pink-500 text-white px-4 py-2 rounded-md cursor-pointer transform transition-transform duration-300 hover:scale-105 md:text-base sm:text-sm">Register to event</button>
+                    <button type="button" id="registerButton" class="bg-pink-500 text-white px-4 py-2 rounded-md cursor-pointer transform transition-transform duration-300 hover:scale-105 md:text-base sm:text-sm">Register to event</button>
                 </div>
             </form>
         </div>
@@ -117,5 +117,13 @@
         </div>
     </div>
 </div>
+
+<script>
+document.getElementById('registerButton').addEventListener('click', function() {
+    var form = document.getElementById('registerForm');
+    form.submit();
+    alert('Anda berhasil mendaftar ke akun');
+});
+</script>
 
 @endsection
