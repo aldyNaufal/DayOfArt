@@ -44,23 +44,19 @@
                 <div class="space-y-6">
                     <div class="flex">
                         <span class="w-1/4 font-semibold">Fullname</span>
-                        <span class="w-3/4">Muhammad Aldy Naufal</span>
+                        <span class="w-3/4">{{ $user->fullname}}</span>
                     </div>
                     <div class="flex">
                         <span class="w-1/4 font-semibold">Surname</span>
-                        <span class="w-3/4">Aldy Ganteng</span>
+                        <span class="w-3/4">{{ $user->surname}}</span>
                     </div>
                     <div class="flex">
                         <span class="w-1/4 font-semibold">Birthday</span>
-                        <span class="w-3/4">28 / 02 / 2004</span>
+                        <span class="w-3/4">{{ $user->birthdate}}</span>
                     </div>
                     <div class="flex">
                         <span class="w-1/4 font-semibold">Phone Number</span>
-                        <span class="w-3/4">08123456789</span>
-                    </div>
-                    <div class="flex">
-                        <span class="w-1/4 font-semibold">Location</span>
-                        <span class="w-3/4">Jawa Timur, Malang</span>
+                        <span class="w-3/4">{{ $user->phoneNumber}}</span>
                     </div>
                 </div>
             </div>
