@@ -67,7 +67,7 @@ class AuthController extends Controller
             'password' => Hash::make($request->password),
             'surname' => $request->surname,
             'birthdate' => $request->birthdate,
-            'phone_number' => $request->phone_number,
+            'phoneNumber' => $request->phone_number,
         ]);
 
         return redirect()->route('signin')->with('success', 'Account created successfully!');
